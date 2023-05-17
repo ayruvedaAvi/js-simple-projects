@@ -1,0 +1,15 @@
+.display_color{
+    margin: 3%;
+    background-color: grey;
+    padding: 1%;
+    border-radius: 8%;
+    border-style: solid;
+    padding-left: 12%;
+}
+.button{
+    margin: 3%;
+}
+.btn{
+    background-color: antiquewhite;
+    border-radius: 12%;
+}
