@@ -23,16 +23,18 @@ setInterval(updateClock,1000);
 document.getElementById("enter-time").addEventListener("click",setTime);
 let timer;
 function setTime(){
-    timer=parseFloat(prompt("Enter time in minutes: "));
+    timer=parseFloat(prompt("Enter time in seconds: "));
     if(timer<=0){
         alert("Enter valid time.");
     }
 }
 
 let element=document.getElementById('timer');
-document.getElementById("start-time").addEventListener("click",setTimer(timer,element));
+document.getElementById("start-time").addEventListener("click",()=>setTimer(timer,element));
+//When you pass parameters to a function it is immediately called. You need to pass a function 
+//that will wait for the event and then call with the specified parameters.(learned this via stackoverflow.)
 function setTimer(duration, displayElement) {
-    console.log("timer called")
+    console.log("timer called");
     let timer = duration;
     let minutes, seconds;
   
@@ -53,4 +55,17 @@ function setTimer(duration, displayElement) {
     }, 1000); 
   }
 
+
+  //For stopwatch
+
+  document.getElementById('start').addEventListener("click", startStopWatch());
+
+  function startStopWatch(x){
+    
+    document.getElementById('count').innerHTML=x;
+    x++;
+  }
+
+  const intervalId=setInterval(startStopWatch,1000);
+  
 
