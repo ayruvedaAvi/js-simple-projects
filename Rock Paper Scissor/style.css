@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(20, 16, 48);
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+header{
+    background: rgb(207, 241, 230);
+}
+header > h1{
+    color: rgb(8, 6, 29);
+    text-align: center;
+}
+.score-board{
+    margin: auto;
+    border: 3px solid white;
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+    font-size: 35px;
+    border-radius: 6px;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+.label{
+    background-color: brown;
+    font-size: 20px;
+    padding: opx;
+    border-radius: 6px;
+}
+#user{
+    background-color: green;
+    position: absolute;
+    top: 25px;
+    left: -15px;
+}
+#bot{
+    position: absolute;
+    top: 25px;
+    left: 135px;
+}
+.result{
+    font-size: 20px;
+    color: whitesmoke;
+}
+.result > h1{
+    text-align: center;
+}
+.choices{
+    text-align: center;
+    margin-top: 3%;
+}
+.choice{
+    display: inline-block;
+    border: 3px solid wheat;
+    border-radius: 50%;
+    padding: 2%;
+    margin: 0 15px;
+}
+img{
+    height: 50px;
+    border-radius: 15px;
+}
+.choice:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.msg{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 3%;
+    color: darkcyan;
+}
+#user-score{
+    color: green;
+}
+#bot-score{
+    color: brown;
+}

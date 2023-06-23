@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock paper scissors
-    </title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock paper scissors
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Rock Paper Scissor</h1>
+        </header>
+        <div class="score-board">
+            <div id="user" class="label">you</div>
+            <div id="bot" class="label">bot</div>
+            <span id="user-score">0</span>:<span id="bot-score">0</span>
+        </div>
+        <div class="result">
+           <h1> Result will be displayed here.</h1>
+        </div>
+        <div class="choices">
+            <div class="choice" id="rock-choice">
+                <img src="./images/rock.png" alt="rock">
+            </div>
+            <div id="paper-choice" class="choice">
+                <img src="./images/paper.png" alt="paper">
+            </div>
+            <div id="scissor-choice" class="choice">
+                <img src="./images/scissors.png" alt="scissor">
+            </div>
+        </div>
+            <div class="msg">
+                <p id="msg"> Make your move.</p>
+            </div>
+        <script src="script.js"></script>
+    </body>
 </html>
